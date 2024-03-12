@@ -1,0 +1,32 @@
+{
+  "cats": [
+    {
+      "id": 1,
+      "image": "https://static.scientificamerican.com/sciam/cache/file/2AE14CDD-1265-470C-9B15F49024186C10_source.jpg?w=600",
+      "name": "Gosho",
+      "breed": "Persian",
+      "description": "talks too much2"
+    },
+    {
+      "id": 2,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Cat_August_2010-4.jpg/1200px-Cat_August_2010-4.jpg",
+      "name": "Gosho2",
+      "breed": "Persian",
+      "description": "talks too much3"
+    },
+    {
+      "id": 3,
+      "image": "https://i.natgeofe.com/n/4cebbf38-5df4-4ed0-864a-4ebeb64d33a4/NationalGeographic_1468962_4x3.jpg",
+      "name": "Gosho3",
+      "breed": "Siamese",
+      "description": "talks too much4"
+    },
+    {
+      "id": 4,
+      "image": "https://media.4-paws.org/a/5/3/7/a537f08d227326121b80790ba54036498668c9c8/VIER%20PFOTEN_2016-07-08_011-4993x3455-1920x1329.jpg",
+      "name": "Gosho4",
+      "breed": "Bengal",
+      "description": "talks too much5"
+    }
+  ]
+}
