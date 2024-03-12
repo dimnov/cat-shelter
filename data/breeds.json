@@ -1,0 +1,19 @@
+{
+  "breeds": [
+    {
+      "name": "Persian"
+    },
+    {
+      "name": "Siamese"
+    },
+    {
+      "name": "Maine Coon"
+    },
+    {
+      "name": "Bengal"
+    },
+    {
+      "name": "Sphynx"
+    }
+  ]
+}
