@@ -2,7 +2,8 @@ const http = require('http');
 const { handleHome } = require('./handlers/home');
 const { notFound } = require('./handlers/not-found');
 const { handleAddBreed, handleAddCat } = require('./handlers/cat');
-const { handleCss, handleIcon } = require('./handlers/static-files');
+const { handleStaticFile } = require('./handlers/static-files');
+const { handleEditCat } = require('./handlers/editCat');
 
 const server = http.createServer((req, res) => {
   const url = req.url;
@@ -13,10 +14,11 @@ const server = http.createServer((req, res) => {
     handleAddBreed(req, res);
   } else if (url === '/cats/add-cat') {
     handleAddCat(req, res);
-  } else if (url === '/content/styles/site.css') {
-    handleCss(req, res);
-  } else if (url === '/content/images/pawprint.ico') {
-    handleIcon(req, res);
+  } else if (url.startsWith('/cats/edit-cat/')) {
+    const catId = url.substring('/cats/edit-cat/'.length);
+    handleEditCat(req, res, catId);
+  } else if (url.startsWith('/content/')) {
+    handleStaticFile(req, res);
   } else {
     notFound(req, res);
   }
